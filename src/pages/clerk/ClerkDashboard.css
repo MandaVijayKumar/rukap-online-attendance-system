@@ -1,0 +1,63 @@
+/* Main Layout */
+
+.clerk-dashboard {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #f4f6f9;
+}
+
+/* Body */
+
+.clerk-dashboard-body {
+  display: flex;
+  flex: 1;
+}
+
+/* Content */
+
+.clerk-dashboard-content {
+  flex: 1;
+  padding: 25px;
+  background: #f4f6f9;
+}
+
+/* Title */
+
+.dept-title {
+  text-align: center;
+  color: #0b3c5d;
+  margin-bottom: 20px;
+}
+
+/* Home */
+
+.clerk-home {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.clerk-home h2 {
+  margin-bottom: 10px;
+}
+
+.clerk-home ul {
+  margin-left: 20px;
+  line-height: 1.8;
+}
+.instructions-list {
+  margin-top: 15px;
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+.instructions-list li {
+  margin-bottom: 10px;
+}
+
+.instructions-list ul {
+  margin-top: 5px;
+  padding-left: 20px;
+}

@@ -1,0 +1,109 @@
+.student-container{
+width:90%;
+margin:auto;
+margin-top:40px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th,td{
+border:1px solid #ccc;
+padding:10px;
+text-align:center;
+}
+
+th{
+background:#007bff;
+color:white;
+}
+
+.edit-btn{
+background:orange;
+color:white;
+border:none;
+padding:6px 12px;
+margin-right:5px;
+cursor:pointer;
+}
+
+.delete-btn{
+background:red;
+color:white;
+border:none;
+padding:6px 12px;
+cursor:pointer;
+}
+
+.edit-modal{
+background:#f4f4f4;
+padding:20px;
+margin-top:20px;
+}
+/* MODAL OVERLAY */
+
+.modal-overlay{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.5);
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:1000;
+}
+
+/* MODAL BOX */
+
+.modal-content{
+background:white;
+padding:25px;
+border-radius:8px;
+width:400px;
+display:flex;
+flex-direction:column;
+gap:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.3);
+}
+
+.modal-content h3{
+text-align:center;
+margin-bottom:10px;
+}
+
+.modal-content input,
+.modal-content select{
+padding:8px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+/* BUTTONS */
+
+.modal-buttons{
+display:flex;
+justify-content:space-between;
+margin-top:10px;
+}
+
+.update-btn{
+background:#28a745;
+color:white;
+border:none;
+padding:8px 14px;
+cursor:pointer;
+border-radius:5px;
+}
+
+.cancel-btn{
+background:#dc3545;
+color:white;
+border:none;
+padding:8px 14px;
+cursor:pointer;
+border-radius:5px;
+}

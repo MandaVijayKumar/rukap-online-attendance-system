@@ -1,0 +1,97 @@
+/* Unique sidebar class (no conflict) */
+
+.clerk-sidebar {
+  width: 240px;
+  min-height: 100vh;
+  background: #0b3c5d;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Title */
+
+.sidebar-title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Menu */
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Menu items */
+
+.sidebar-menu li {
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+/* Hover */
+
+.sidebar-menu li:hover {
+  background: #1e5f8a;
+}
+
+/* Active state (optional future use) */
+
+.sidebar-menu li.active {
+  background: #ffffff;
+  color: #0b3c5d;
+  font-weight: bold;
+}
+.clerk-sidebar {
+  width: 240px;
+  min-height: 100vh;
+  background: #0b3c5d;
+  color: #fff;
+  padding: 20px;
+}
+
+.sidebar-title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu li {
+  display: flex;
+  align-items: center;
+  gap: 10px;   /* space between icon & text */
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.sidebar-menu li:hover {
+  background: #1e5f8a;
+}
+
+/* ICON STYLE */
+.menu-icon {
+  font-size: 18px;
+}
+
+/* Optional Active */
+.sidebar-menu li.active {
+  background: #ffffff;
+  color: #0b3c5d;
+  font-weight: bold;
+}

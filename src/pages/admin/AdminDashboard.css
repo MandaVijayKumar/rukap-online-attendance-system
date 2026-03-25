@@ -1,0 +1,62 @@
+/* layout container */
+
+.dashboard-layout{
+display:flex;
+min-height:100vh;
+background:#f5f6fa;
+}
+
+/* sidebar is defined in Sidebar.css
+   but make sure width exists */
+
+.sidebar{
+width:220px;
+background:#2c3e50;
+color:white;
+min-height:100vh;
+}
+
+/* main content */
+
+.dashboard-content{
+flex:1;
+padding:25px;
+}
+
+/* dashboard cards */
+
+.admin-dashboard{
+width:100%;
+}
+
+.dashboard-cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+margin-top:20px;
+}
+
+.card{
+background:#ffffff;
+padding:25px;
+text-align:center;
+border-radius:8px;
+box-shadow:0px 2px 8px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0px 4px 15px rgba(0,0,0,0.2);
+}
+
+.card h3{
+font-size:32px;
+margin-bottom:10px;
+color:#007bff;
+}
+
+.card p{
+font-size:16px;
+color:#555;
+}

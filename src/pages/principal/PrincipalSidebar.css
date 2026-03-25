@@ -1,0 +1,52 @@
+.principal-sidebar{
+width:240px;
+background:#0b3c5d;;
+color:white;
+height:100vh;
+padding:20px;
+display:flex;
+flex-direction:column;
+}
+
+.principal-title{
+margin-bottom:30px;
+font-size:20px;
+font-weight:bold;
+text-align:center;
+}
+
+/* MENU */
+
+.principal-menu{
+list-style:none;
+padding:0;
+margin:0;
+}
+
+/* MENU ITEM */
+
+.principal-menu-item{
+padding:12px;
+cursor:pointer;
+border-bottom:1px solid rgba(255,255,255,0.2);
+transition:all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+
+.principal-menu-item:hover{
+background:#34495e;
+padding-left:18px;
+}
+
+/* LOGOUT STYLE */
+
+.logout{
+color:#ffffff;
+font-weight:bold;
+}
+
+.logout:hover{
+background:#c0392b;
+color:white;
+}

@@ -1,0 +1,107 @@
+/* MAIN CONTAINER */
+
+.subject-container{
+width:90%;
+margin:auto;
+margin-top:40px;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+
+/* TITLE */
+
+.subject-container h2{
+text-align:center;
+margin-bottom:20px;
+color:#333;
+}
+
+
+/* FORM */
+
+.subject-container form{
+display:flex;
+gap:10px;
+margin-bottom:25px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+
+/* INPUTS */
+
+.subject-container input,
+.subject-container select{
+padding:8px 10px;
+border:1px solid #ccc;
+border-radius:5px;
+font-size:14px;
+min-width:180px;
+}
+
+
+/* BUTTON */
+
+.subject-container button{
+padding:8px 16px;
+background:#007bff;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+.subject-container button:hover{
+background:#0056b3;
+}
+
+
+/* TABLE */
+
+.subject-container table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+
+/* TABLE HEAD */
+
+.subject-container th{
+background:#007bff;
+color:white;
+padding:10px;
+border:1px solid #ccc;
+}
+
+
+/* TABLE BODY */
+
+.subject-container td{
+padding:10px;
+border:1px solid #ccc;
+text-align:center;
+}
+
+
+/* ROW HOVER */
+
+.subject-container tbody tr:hover{
+background:#f5f5f5;
+}
+
+
+/* DELETE BUTTON */
+
+.subject-container td button{
+background:#dc3545;
+padding:6px 12px;
+border:none;
+color:white;
+border-radius:4px;
+cursor:pointer;
+}
+
+.subject-container td button:hover{
+background:#b02a37;
+}

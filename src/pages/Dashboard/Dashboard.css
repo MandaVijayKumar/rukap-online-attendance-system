@@ -1,0 +1,178 @@
+/* Main Dashboard Layout */
+
+.dashboard{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    background:#f4f6f9;
+}
+
+/* Body layout */
+
+.dashboard-body{
+    display:flex;
+    flex:1;
+}
+
+/* Sidebar */
+
+.sidebar{
+    width:220px;
+    background:#2c3e50;
+    color:white;
+    padding-top:20px;
+}
+
+.sidebar ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.sidebar li{
+    padding:15px 20px;
+    cursor:pointer;
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.sidebar li:hover{
+    background:#34495e;
+}
+
+/* Navbar */
+
+.navbar{
+    background:#34495e;
+    color:white;
+    padding:15px 25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/* Logout button */
+
+.logout-btn{
+    background:#e74c3c;
+    border:none;
+    color:white;
+    padding:8px 15px;
+    cursor:pointer;
+    border-radius:4px;
+}
+
+.logout-btn:hover{
+    background:#c0392b;
+}
+
+/* Dashboard content */
+
+.dashboard-content{
+    flex:1;
+    padding:30px;
+}
+
+.dashboard-content h2{
+    margin-bottom:10px;
+}
+
+/* Dashboard cards */
+
+.dashboard-cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-top:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:8px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:22px;
+    font-weight:bold;
+    color:#2c3e50;
+}
+
+/* Mobile Responsive */
+
+@media(max-width:768px){
+
+.dashboard-body{
+    flex-direction:column;
+}
+
+.sidebar{
+    width:100%;
+    display:flex;
+    overflow-x:auto;
+}
+
+.sidebar ul{
+    display:flex;
+}
+
+.sidebar li{
+    border:none;
+    padding:15px;
+}
+
+}
+.dashboard{
+  display:flex;
+  flex-direction:column;
+  min-height:100vh;
+  background:#f4f6f9;
+}
+
+/* Navbar + Body */
+
+.dashboard-body{
+  display:flex;
+  flex:1;
+}
+
+/* Sidebar */
+
+.sidebar{
+  width:220px;
+  background:#2c3e50;
+  color:white;
+  min-height:100vh;
+}
+
+/* Content Area */
+
+.dashboard-content{
+  flex:1;
+  padding:25px;
+  background:#f4f6f9;
+}
+.clerk-instructions{
+padding:20px;
+background:#ffffff;
+border-radius:8px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.clerk-instructions h2{
+margin-bottom:10px;
+color:#333;
+}
+
+.clerk-instructions ol{
+margin-left:20px;
+line-height:1.7;
+}
+
+.clerk-instructions li{
+margin-bottom:10px;
+}

@@ -1,0 +1,40 @@
+.faculty-attendance{
+width:90%;
+margin:auto;
+margin-top:30px;
+}
+
+.subject-list button{
+margin:5px;
+padding:8px 12px;
+background:#007bff;
+color:white;
+border:none;
+cursor:pointer;
+}
+
+.period-section{
+margin:15px 0;
+}
+
+.attendance-table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+
+.attendance-table th,
+.attendance-table td{
+border:1px solid #ccc;
+padding:10px;
+text-align:center;
+}
+
+.submit-btn{
+margin-top:15px;
+padding:10px 20px;
+background:green;
+color:white;
+border:none;
+cursor:pointer;
+}

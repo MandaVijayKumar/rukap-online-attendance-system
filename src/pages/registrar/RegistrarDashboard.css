@@ -1,0 +1,62 @@
+/* ===== MAIN WRAPPER ===== */
+.reg-layout-wrapper{
+display:flex;
+margin-top:70px; /* navbar height */
+}
+
+/* ===== SIDEBAR (NEW CLASS) ===== */
+.reg-sidebar{
+width:240px;
+background:#2c3e50;
+color:white;
+padding:20px;
+min-height:calc(100vh - 70px);
+}
+
+/* ===== CONTENT ===== */
+.reg-content{
+flex:1;
+padding:20px;
+background:#f5f6fa;
+min-height:calc(100vh - 70px);
+}
+
+/* ===== GRID ===== */
+.reg-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+margin-top:20px;
+}
+
+/* ===== CARD ===== */
+.reg-card{
+background:#fff;
+padding:20px;
+border-radius:8px;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+/* ===== SIDEBAR MENU ===== */
+.reg-sidebar ul{
+list-style:none;
+padding:0;
+}
+
+.reg-sidebar li{
+display:flex;
+align-items:center;
+padding:10px;
+cursor:pointer;
+border-radius:5px;
+margin-bottom:8px;
+}
+
+.reg-sidebar li:hover{
+background:#34495e;
+}
+
+.reg-active{
+background:#ff9800;
+}

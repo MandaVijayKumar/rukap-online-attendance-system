@@ -1,0 +1,195 @@
+/* ================= MAIN CONTAINER ================= */
+
+.mapping-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #f9fbfd;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* ================= TITLE ================= */
+
+.mapping-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+
+/* ================= FILTERS ================= */
+
+.filters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.filters select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  font-size: 14px;
+  background: #fff;
+  transition: 0.2s ease;
+}
+
+.filters select:focus {
+  border-color: #944491;
+  outline: none;
+}
+
+
+/* ================= BUTTONS ================= */
+
+.mapping-container button {
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+/* Load Button */
+.filters button {
+  background: #67236c;
+  color: #fff;
+}
+
+.filters button:hover {
+  background: #713367;
+}
+
+/* Map Button */
+.mapping-container > button {
+  margin-top: 15px;
+  background: #603f84;
+  color: #fff;
+  width: 100%;
+  font-weight: 500;
+}
+
+.mapping-container > button:hover {
+  background: #7e1e5e;
+}
+
+
+/* ================= TABLE ================= */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+thead {
+  background: #343a40;
+  color: #fff;
+}
+
+thead th {
+  padding: 12px;
+  font-weight: 500;
+  text-align: left;
+}
+
+tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+tbody tr:hover {
+  background: #f1f7ff;
+}
+
+
+/* ================= STATUS COLORS ================= */
+
+.status-mapped {
+  color: #77518a;
+  font-weight: bold;
+}
+
+.status-new {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+
+/* ================= ADD BUTTON ================= */
+
+tbody button {
+  background: #17a2b8;
+  color: white;
+  padding: 6px 10px;
+  font-size: 13px;
+}
+
+tbody button:hover {
+  background: #117a8b;
+}
+
+
+/* ================= SUMMARY TEXT ================= */
+
+.mapping-container p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+
+/* ================= SECTION HEADINGS ================= */
+
+.mapping-container h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .filters {
+    grid-template-columns: 1fr;
+  }
+
+  table {
+    font-size: 13px;
+  }
+}
+/* ===== SPACING BETWEEN SECTIONS ===== */
+
+.mapping-container > button {
+  margin-top: 20px;
+  margin-bottom: 40px; /* ⬅️ adds space below Save Mapping */
+}
+
+/* Add spacing before "Add Newly Registered Students" section */
+.mapping-container h3 {
+  margin-top: 50px;
+  padding-top: 15px;
+  border-top: 2px solid #eaeaea; /* subtle divider line */
+}
+
+/* Space for Load All Students button */
+.mapping-container h3 + button {
+  margin-top: 10px;
+}
+
+/* Space for summary text */
+.mapping-container p {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}

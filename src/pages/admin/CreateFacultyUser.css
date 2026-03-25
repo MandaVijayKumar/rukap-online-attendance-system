@@ -1,0 +1,24 @@
+.create-user-container{
+width:400px;
+margin:auto;
+margin-top:40px;
+padding:20px;
+background:#fff;
+border-radius:8px;
+box-shadow:0px 2px 8px rgba(0,0,0,0.1);
+}
+
+.create-user-container input{
+width:100%;
+padding:8px;
+margin-top:5px;
+margin-bottom:15px;
+}
+
+.create-user-container button{
+padding:10px;
+background:#007bff;
+color:white;
+border:none;
+cursor:pointer;
+}
