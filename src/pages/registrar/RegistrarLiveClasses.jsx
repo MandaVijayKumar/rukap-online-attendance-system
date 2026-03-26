@@ -178,13 +178,13 @@ borderBottom:"2px solid #1565c0"
 // minute:"2-digit"
 // })
 // : "-";
-const formattedTime = cls.created_at
-  ? new Date(cls.created_at).toLocaleTimeString("en-IN", {
-      hour: "2-digit",
-      minute: "2-digit",
-      hour12: true,
-      timeZone: "Asia/Kolkata"
-    })
+const formattedTime = cls.time
+  ? new Date(`1970-01-01T${cls.time}`)
+      .toLocaleTimeString("en-IN", {
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: true
+      })
   : "-";
 return(
 
