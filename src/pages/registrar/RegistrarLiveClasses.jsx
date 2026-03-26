@@ -188,11 +188,23 @@ borderBottom:"2px solid #1565c0"
 //   : "-";
   const formattedTime = cls.time
   ? (() => {
-      const [hour, minute] = cls.time.split(":");
-      let h = parseInt(hour);
-      const ampm = h >= 12 ? "PM" : "AM";
-      h = h % 12 || 12;
-      return `${h}:${minute} ${ampm}`;
+      let [hour, minute] = cls.time.split(":").map(Number);
+
+      // ADD 5 hours 30 minutes (IST correction)
+      minute += 30;
+      if (minute >= 60) {
+        minute -= 60;
+        hour += 1;
+      }
+
+      hour += 5;
+      if (hour >= 24) hour -= 24;
+
+      // Convert to 12-hour format
+      const ampm = hour >= 12 ? "PM" : "AM";
+      let h = hour % 12 || 12;
+
+      return `${h}:${minute.toString().padStart(2, "0")} ${ampm}`;
     })()
   : "-";
 return(
