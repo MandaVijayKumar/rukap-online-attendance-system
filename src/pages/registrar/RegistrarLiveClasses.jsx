@@ -172,13 +172,21 @@ borderBottom:"2px solid #1565c0"
 
 {group.map((cls,index)=>{
 
+// const formattedTime = cls.time
+// ? new Date(`1970-01-01T${cls.time}`).toLocaleTimeString("en-IN",{
+// hour:"2-digit",
+// minute:"2-digit"
+// })
+// : "-";
 const formattedTime = cls.time
-? new Date(`1970-01-01T${cls.time}`).toLocaleTimeString("en-IN",{
-hour:"2-digit",
-minute:"2-digit"
-})
-: "-";
-
+  ? new Date(`1970-01-01T${cls.time}`)
+      .toLocaleTimeString("en-IN", {
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: true,
+        timeZone: "Asia/Kolkata"
+      })
+  : "-";
 return(
 
 <TableRow
