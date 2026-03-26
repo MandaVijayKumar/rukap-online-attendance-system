@@ -178,13 +178,22 @@ borderBottom:"2px solid #1565c0"
 // minute:"2-digit"
 // })
 // : "-";
-const formattedTime = cls.time
-  ? new Date(`1970-01-01T${cls.time}`)
-      .toLocaleTimeString("en-IN", {
-        hour: "2-digit",
-        minute: "2-digit",
-        hour12: true
-      })
+// const formattedTime = cls.time
+//   ? new Date(`1970-01-01T${cls.time}`)
+//       .toLocaleTimeString("en-IN", {
+//         hour: "2-digit",
+//         minute: "2-digit",
+//         hour12: true
+//       })
+//   : "-";
+  const formattedTime = cls.time
+  ? (() => {
+      const [hour, minute] = cls.time.split(":");
+      let h = parseInt(hour);
+      const ampm = h >= 12 ? "PM" : "AM";
+      h = h % 12 || 12;
+      return `${h}:${minute} ${ampm}`;
+    })()
   : "-";
 return(
 
